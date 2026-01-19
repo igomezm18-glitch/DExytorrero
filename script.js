@@ -270,7 +270,20 @@ function abrirEcuacion(numeroPokemon) {
   irA("ecuacion");
 }
 
+function leerNumero(texto) {
+  texto = texto.trim();
 
+  // Si es fracción tipo "7/5"
+  if (texto.includes("/")) {
+    const partes = texto.split("/");
+    const num = Number(partes[0]);
+    const den = Number(partes[1]);
+    return num / den;
+  }
+
+  // Si es número normal
+  return Number(texto);
+}
 
 function comprobarEcuacion() {
 
@@ -366,20 +379,8 @@ function cerrarScanner() {
   }
 }
 
-function leerNumero(texto) {
-  texto = texto.trim();
 
-  // Si es fracción tipo "7/5"
-  if (texto.includes("/")) {
-    const partes = texto.split("/");
-    const num = Number(partes[0]);
-    const den = Number(partes[1]);
-    return num / den;
-  }
 
-  // Si es número normal
-  return Number(texto);
-}
 
 
 
