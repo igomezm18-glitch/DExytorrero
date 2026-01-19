@@ -293,8 +293,9 @@ function comprobarEcuacion() {
   }
 
   if (sol.length === 2) {
-    const r1 = Number(respuesta1.value);
-    const r2 = Number(respuesta2.value);
+    const r1 = leerNumero(respuesta1.value);
+    const r2 = leerNumero(respuesta2.value);
+
 
     const ok =
       (r1 === sol[0] && r2 === sol[1]) ||
@@ -379,6 +380,7 @@ function leerNumero(texto) {
   // Si es número normal
   return Number(texto);
 }
+
 
 
 
