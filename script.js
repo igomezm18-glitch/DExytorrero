@@ -242,9 +242,9 @@ const ecuaciones = [
   { id: 3, texto: "x(x^{2}+x)-(x+1)(x^{2}-2)=-4 ", solucion: [-3,-3] },
   { id: 4, texto: "2x^{2}-3x-2=0", solucion: [2,-1/2] },
   { id: 5, texto: "-5(2-x)+3(2x+4)=5(4x-2)", solucion: [4/3] },
-  { id: 6, texto: "-x+3x+1=2x-3", solucion: [NS] },
+  { id: 6, texto: "-x+3x+1=2x-3", solucion: ["NS"] },
   { id: 7, texto: "(x-1)(x-2)=0", solucion: [1,2] },
-  { id: 8, texto: "x^{2}-4x+21=0", solucion: [NS] },
+  { id: 8, texto: "x^{2}-4x+21=0", solucion: ["NS"] },
   { id: 9, texto: "(3x-2)^{2}=(2x+1)(2x-1)-2", solucion: [1,7/5] },
   { id: 10, texto: "\\frac{x-4}{6} + \\frac{2x-4}{8}= - \\frac{5x}{10}-\\frac{5x-6}{12}", solucion: [5] }
 ];
@@ -378,6 +378,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
