@@ -163,11 +163,14 @@ function abrirPokedex() {
     div.className = "pokemon";
     div.onclick = () => verPokemon(p.id);
 
+    const datos = datosPokemon.find(d => d.id === p.id);
+
     const imagen = p.desbloqueado
       ? `img/poke${p.id}.png`
       : `img/poke${p.id}_silueta.png`;
 
-    const nombre = p.desbloqueado ? p.nombre : "????";
+    // 👉 AQUÍ ESTÁ EL CAMBIO CLAVE
+    const nombre = p.desbloqueado ? datos.nombre : "????";
 
     div.innerHTML = `
       <img src="${imagen}" alt="${nombre}">
@@ -179,6 +182,7 @@ function abrirPokedex() {
 
   irA("pokedex");
 }
+
 
 function verPokemon(id) {
   const lista = JSON.parse(localStorage.getItem("pokemons"));
@@ -392,6 +396,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
