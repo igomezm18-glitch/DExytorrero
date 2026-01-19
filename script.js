@@ -271,7 +271,12 @@ function abrirEcuacion(numeroPokemon) {
 }
 
 function leerNumero(texto) {
-  texto = texto.trim();
+  texto = texto.trim().toUpperCase();
+
+  // 👉 NUEVO: aceptar "NS"
+  if (texto === "NS") {
+    return "NS";
+  }
 
   // Si es fracción tipo "7/5"
   if (texto.includes("/")) {
@@ -281,9 +286,9 @@ function leerNumero(texto) {
     return num / den;
   }
 
-  // Si es número normal
   return Number(texto);
 }
+
 
 function comprobarEcuacion() {
 
@@ -295,6 +300,15 @@ function comprobarEcuacion() {
   }
 
   const sol = ecuacionActual.solucion;
+// 👉 NUEVO: caso sin solución
+if (sol.length === 1 && sol[0] === "NS") {
+  if (respuesta1.value.trim().toUpperCase() === "NS") {
+    desbloquearPokemon(ecuacionActual.id);
+    alert("✅ ¡Correcto!");
+    irA("menu");
+    return;
+  }
+}
 
   if (sol.length === 1) {
     if (Number(respuesta1.value) === sol[0]) {
@@ -378,6 +392,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
