@@ -273,6 +273,14 @@ function abrirEcuacion(numeroPokemon) {
 
 
 function comprobarEcuacion() {
+
+  // 🛑 SEGURIDAD: si por lo que sea no hay ecuación cargada, avisamos y salimos
+  if (!ecuacionActual) {
+    alert("Error al cargar la ecuación. Vuelve a escanear el QR.");
+    irA("menu");
+    return;
+  }
+
   const sol = ecuacionActual.solucion;
 
   if (sol.length === 1) {
@@ -288,7 +296,6 @@ function comprobarEcuacion() {
     const r1 = Number(respuesta1.value);
     const r2 = Number(respuesta2.value);
 
-    // Acepta cualquier orden (2,3) o (3,2)
     const ok =
       (r1 === sol[0] && r2 === sol[1]) ||
       (r1 === sol[1] && r2 === sol[0]);
@@ -303,6 +310,7 @@ function comprobarEcuacion() {
 
   alert("❌ Incorrecto. Inténtalo otra vez.");
 }
+
 
 
 let scannerQR;
@@ -356,6 +364,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
