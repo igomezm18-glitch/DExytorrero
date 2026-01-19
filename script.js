@@ -273,7 +273,7 @@ function abrirEcuacion(numeroPokemon) {
 
 
 function comprobarEcuacion() {
-  const sol = ecuacionActual.soluciones;
+  const sol = ecuacionActual.solucion;
 
   if (sol.length === 1) {
     if (Number(respuesta1.value) === sol[0]) {
@@ -356,6 +356,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
