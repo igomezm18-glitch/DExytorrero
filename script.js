@@ -70,35 +70,35 @@ const datosPokemon = [
     nombre: "Algebrón",
     imagen: "img/poke1.png",
     silueta: "img/poke1_silueta.png",
-    descripcion: "Domina las ecuaciones lineales simples."
+    descripcion: "Su habitat es una incógnita."
   },
   {
     id: 2,
-    nombre: "Proporciónix",
+    nombre: "Fractalus",
     imagen: "img/poke2.png",
     silueta: "img/poke2_silueta.png",
-    descripcion: "Controla razones y proporciones."
+    descripcion: "Suma y resta fracciones algebraicas con facilidad."
   },
   {
     id: 3,
     nombre: "Radicalón",
     imagen: "img/poke3.png",
     silueta: "img/poke3_silueta.png",
-    descripcion: "Especialista en operaciones básicas."
+    descripcion: "Especialista en operaciones irracionales."
   },
   {
     id: 4,
     nombre: "Factorum",
     imagen: "img/poke4.png",
     silueta: "img/poke4_silueta.png",
-    descripcion: "Descompone expresiones complejas."
+    descripcion: "Factoriza cualquier polinomio."
   },
   {
     id: 5,
     nombre: "Ecuatrix",
     imagen: "img/poke5.png",
     silueta: "img/poke5_silueta.png",
-    descripcion: "Equilibra ambos lados de la ecuación."
+    descripcion: "Desequilibra ambos lados de la ecuación."
   },
   {
     id: 6,
@@ -112,28 +112,28 @@ const datosPokemon = [
     nombre: "Multiplox",
     imagen: "img/poke7.png",
     silueta: "img/poke7_silueta.png",
-    descripcion: "Multiplica su poder sin esfuerzo."
+    descripcion: "Se multiplica por 10 y te multiplica por 0."
   },
   {
     id: 8,
     nombre: "Paréntesis",
     imagen: "img/poke8.png",
     silueta: "img/poke8_silueta.png",
-    descripcion: "Controla el orden de las operaciones."
+    descripcion: "No se olvida de los paréntesis."
   },
   {
     id: 9,
-    nombre: "Doblón",
+    nombre: "Dursle",
     imagen: "img/poke9.png",
     silueta: "img/poke9_silueta.png",
-    descripcion: "Suma fuerzas iguales."
+    descripcion: "Suma fuerzas físicas."
   },
   {
     id: 10,
-    nombre: "Fractalus",
+    nombre: "Inferen",
     imagen: "img/poke10.png",
     silueta: "img/poke10_silueta.png",
-    descripcion: "Maestro de las fracciones algebraicas."
+    descripcion: "Utiliza la probabilidad para ver el futuro."
   }
 ];
 
@@ -392,6 +392,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
