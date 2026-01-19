@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>DExy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e3350d">
+
+
+</script>
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+
+</head>
+<body>
+
+<!-- PANTALLA PRESENTACIÓN -->
+<section id="presentacion" class="pantalla">
+  <div class="titulo-container">
+    <img src="img/cartoon-title.png" alt="DEXy" class="titulo-imagen">
+  </div>
+  <p style="color: black; font-size: 20px; font-weight: bold; text-align: left;"> La Secta de los Pitagóricos no es una leyenda.<br>
+<br>
+Desde hace siglos, una sociedad secreta formada por los matemáticos más brillantes de la historia protege el equilibrio del espacio-tiempo. Sus miembros trabajan en la sombra, evitando que las leyes naturales del universo colapsen. <br>
+<br>
+Entre ellos se encuentran matemáticos como Gauss (el principe de las matemáticas) y Ruffini (más conocido como Rufino el reno), y muchos otros cuyos descubrimientos han salvado la realidad más de una vez. <br>
+<br>
+Hoy, algo ha salido mal.<br>
+<br>
+Una brecha en el espacio ha provocado la aparición de 10 anomalías dentro del IES Muñoz Torrero, manifestadas como criaturas misteriosas conocidas como matmonsters. Estas entidades distorsionan el entorno y solo pueden ser contenidas mediante el razonamiento matemático. <br>
+<br>
+Por primera vez, la secta necesita ayuda externa.<br>
+<br>
+Los alumnos de 3.º ESO han sido elegidos para localizarlas, descifrarlas y registrarlas utilizando un aparato llamado DExy antes de que la brecha se expanda. <br>
+<br>
+Hoy, el instituto es un campo de batalla. ¡Qué las matemáticas os acompañen!</p>
+  <button onclick="continuarInicio()">Comenzar</button>
+</section>
+
+<!-- REGISTRO ENTRENADOR -->
+<section id="registro" class="pantalla oculto">
+  <h2>👤 Datos del entrenador</h2>
+  <input id="nombre" placeholder="Nombre y apellidos">
+  <input id="curso" placeholder="Curso">
+  <input id="frase" placeholder="Frase de entrenador">
+  <button onclick="guardarEntrenador()">Guardar</button>
+</section>
+
+<!-- MENÚ PRINCIPAL -->
+<section id="menu" class="pantalla oculto">
+  <h2>📋 Menú principal</h2>
+  <button onclick="abrirPokedex()">📘 Pokedex</button>
+  <button onclick="abrirScanner()">📡 Analizar anomalía</button>
+  <button onclick="abrirTarjeta()">🪪 Tarjeta de entrenador</button>
+  <button onclick="irA('codigo')">🔐 Zona secreta</button>
+  <button class="reset" onclick="resetear()">♻ Resetear aplicación</button>
+</section>
+
+<!-- POKEDEX -->
+<section id="pokedex" class="pantalla oculto">
+  <h2>📘 Pokedex</h2>
+  <div id="listaPokemon" class="grid"></div>
+  <button onclick="irA('menu')">⬅ Volver</button>
+</section>
+
+<!--CODIGO QR-->
+<section id="analizar" class="pantalla oculto">
+  <h2>📡 Analizar anomalía</h2>
+
+  <div id="lector-qr" style="width: 300px; margin: auto;"></div>
+
+  <p id="mensajeQR"></p>
+
+  <button onclick="cerrarScanner()">⬅ Volver</button>
+</section>
+
+
+<!-- TARJETA ENTRENADOR -->
+<section id="tarjeta" class="pantalla oculto">
+  <h2>🪪 Tarjeta de entrenador</h2>
+  <div id="datosEntrenador"></div>
+  <button onclick="irA('menu')">⬅ Volver</button>
+</section>
+
+<!-- CÓDIGO NUMÉRICO -->
+<section id="codigo" class="pantalla oculto">
+  <h2>🔐 Introduce el código</h2>
+  <input type="number" id="codigoInput" placeholder="Código numérico">
+  <button onclick="comprobarCodigo()">Entrar</button>
+  <button onclick="irA('menu')">⬅ Volver</button>
+</section>
+
+<!-- PREGUNTA EXAMEN -->
+<section id="pregunta" class="pantalla oculto">
+  <h2>❓ Pregunta del examen</h2>
+  <p><strong>Si 3x + 6 = 21, ¿cuánto vale x?</strong></p>
+  <button onclick="irA('menu')">⬅ Volver</button>
+</section>
+
+<!-- ECUACIONES -->
+<section id="ecuacion" class="pantalla oculto">
+  <h2>🧮 Resuelve la ecuación</h2>
+  <p id="textoEcuacion"></p>
+  <input type="number" id="respuesta1" placeholder="Solución">
+  <input type="number" id="respuesta2" placeholder="Solución" style="display:none;">
+  <button onclick="comprobarEcuacion()">Comprobar</button>
+  <button onclick="irA('menu')">⬅ Volver</button>
+</section>
+
+<section id="detallePokemon" class="pantalla oculto">
+  <h2 id="detalleNombre"></h2>
+
+  <img id="detalleImagen" class="imagen-detalle">
+
+  <p id="detalleInfo"></p>
+
+  <button onclick="irA('pokedex')">⬅ Volver</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

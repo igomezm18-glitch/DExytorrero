@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+.pantalla {
+  padding: 30px;
+}
+
+.oculto {
+  display: none;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 250px;
+}
+
+button {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: #c0392b;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.pokemon {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.silueta {
+  font-size: 40px;
+  color: black;
+}
+
+.desbloqueado {
+  font-size: 40px;
+}
+
+/* CONTROL DE IMÁGENES DE LA POKEDEX */
+.pokemon img {
+  width: 80px;      /* Cambia este valor si quieres */
+  height: 80px;
+  object-fit: contain;
+}
+
+.titulo-imagen {
+  width: 200px;   /* o menos, ajusta según necesites */
+  height: auto;   /* mantiene proporción */
+  display: block;
+  margin: 0 auto; /* centra la imagen */
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.5)); /* sombra opcional */
+}
+
+#presentacion {
+  position: relative;            /* para poder poner capas encima si quieres */
+  min-height: 100vh;            /* ocupa toda la pantalla */
+  background-image: url('img/fondo-principal.png'); /* tu imagen */
+  background-size: cover;        /* la imagen cubre toda la pantalla */
+  background-position: center;   /* centrada */
+  background-repeat: no-repeat;  /* no se repite */
+  padding: 20px;                 /* espacio interno */
+  box-sizing: border-box;
+  color: black;                  /* color de texto */
+  font-family: 'Arial', sans-serif;
+}
+
+#presentacion::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.75); /* blanco semitransparente */
+  z-index: 0;
+}
+
+#presentacion > * {
+  position: relative;
+  z-index: 1;  /* para que el texto y botones estén por encima del overlay */
+}
+
+.imagen-detalle {
+  width: 80%;
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+}
