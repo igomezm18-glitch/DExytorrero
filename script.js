@@ -261,7 +261,7 @@ function abrirEcuacion(numeroPokemon) {
   respuesta2.value = "";
 
   // Si hay dos soluciones, mostramos el segundo campo
-  if (ecuacionActual.soluciones.length === 2) {
+  if (ecuacionActual.solucion.length === 2) {
     respuesta2.style.display = "block";
   } else {
     respuesta2.style.display = "none";
@@ -356,6 +356,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
