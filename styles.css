@@ -128,18 +128,22 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;          /* espacio entre botones */
+  gap: 14px;
 }
 
 #menu button {
-  width: 150%;         /* hace que se vean grandes */
-  max-width: 320px;   /* evita que se vuelvan gigantes */
+  width: 90%;        /* ocupa casi todo el ancho */
+  max-width: 400px;  /* permite que sean más grandes */
+  padding: 16px 20px; /* 👉 esto es lo que realmente los hace grandes */
+  font-size: 18px;    /* texto más grande */
 }
+
 
 .pista.desbloqueada {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
 
