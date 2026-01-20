@@ -108,3 +108,21 @@ button {
   display: block;
   margin: 20px auto;
 }
+
+.pistas-grid {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.pista {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  font-weight: bold;
+}
+
+.pista.desbloqueada {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
