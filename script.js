@@ -138,16 +138,16 @@ const datosPokemon = [
 ];
 
 const pistasLocalizacion = [
-  "Cerca del laboratorio de ciencias",
-  "Junto a las taquillas azules",
-  "En la biblioteca, entre los libros antiguos",
-  "Al lado del aula de informática",
-  "Cerca del patio cubierto",
-  "En el pasillo de matemáticas",
-  "Junto a la sala de profesores",
-  "En la entrada principal",
-  "Cerca del gimnasio",
-  "Al lado del salón de actos"
+  "1. Los números duermen. Aquí, el silencio es el protagonista",
+  "2. Territorio prohibido para los jugadores. Aquí nacen los exámenes de tinta y café",
+  "3. Aquí, Euclides entrenaba sus trapecios",
+  "4. Las medidas y las proporciones son fundamentales para una buena receta",
+  "5. ",
+  "6. ",
+  "7. No es aula ni despacho, pero todos pasan por aquí. Si dices ''gracias'', el camino se abre para ti",
+  "8. ",
+  "9. Momentos difíciles y grandes incógnitas. Aquí entrenan los veteranos",
+  "10. Si quieres capturar a la última criatura, busca al creador de la DExy y dile ''¡Acepto el reto!''"
 ];
 
 // colores distintos para cada pista
@@ -436,6 +436,7 @@ function abrirLocalizaciones() {
 
   irA("localizaciones");
 }
+
 
 
 
