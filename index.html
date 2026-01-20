@@ -55,6 +55,7 @@ Hoy, el instituto es un campo de batalla. ¡Qué las matemáticas os acompañen!
   <h2>📋 Menú principal</h2>
   <button onclick="abrirPokedex()">📘 Pokedex</button>
   <button onclick="abrirScanner()">📡 Analizar anomalía</button>
+  <button onclick="abrirLocalizaciones()">📍 Localizaciones</button>
   <button onclick="abrirTarjeta()">🪪 Tarjeta de entrenador</button>
   <button onclick="irA('codigo')">🔐 Zona secreta</button>
   <button class="reset" onclick="resetear()">♻ Resetear aplicación</button>
@@ -120,8 +121,17 @@ Hoy, el instituto es un campo de batalla. ¡Qué las matemáticas os acompañen!
 
   <button onclick="irA('pokedex')">⬅ Volver</button>
 </section>
+  
+<section id="localizaciones" class="pantalla oculto">
+  <h2>📍 Localizaciones</h2>
+
+  <div id="listaPistas" class="pistas-grid"></div>
+
+  <button onclick="irA('menu')">⬅ Volver al menú</button>
+</section>
 
 <script src="script.js"></script>
 </body>
 </html>
+
 
