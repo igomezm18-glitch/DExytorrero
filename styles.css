@@ -134,8 +134,8 @@ button {
 #menu button {
   width: 90%;        /* ocupa casi todo el ancho */
   max-width: 400px;  /* permite que sean más grandes */
-  padding: 16px 20px; /* 👉 esto es lo que realmente los hace grandes */
-  font-size: 18px;    /* texto más grande */
+  padding: 20px 24px; /* 👉 esto es lo que realmente los hace grandes */
+  font-size: 20px;    /* texto más grande */
 }
 
 
@@ -143,6 +143,7 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
 
