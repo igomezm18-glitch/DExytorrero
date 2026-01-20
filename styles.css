@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  font-size: 40px;
   background: #f0f0f0;
   text-align: center;
 }
@@ -16,6 +17,7 @@ body {
 
 h1, h2 {
   color: #333;
+  font-size: 40px;
 }
 
 input {
@@ -27,8 +29,8 @@ input {
 
 button {
   margin: 8px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 40px 44px;
+  font-size: 4px;
   cursor: pointer;
 }
 
@@ -143,6 +145,7 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
 
