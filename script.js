@@ -137,6 +137,25 @@ const datosPokemon = [
   }
 ];
 
+const pistasLocalizacion = [
+  "Cerca del laboratorio de ciencias",
+  "Junto a las taquillas azules",
+  "En la biblioteca, entre los libros antiguos",
+  "Al lado del aula de informática",
+  "Cerca del patio cubierto",
+  "En el pasillo de matemáticas",
+  "Junto a la sala de profesores",
+  "En la entrada principal",
+  "Cerca del gimnasio",
+  "Al lado del salón de actos"
+];
+
+// colores distintos para cada pista
+const coloresPistas = [
+  "#FFD1DC","#D1E8FF","#D1FFD6","#FFF2B2","#F5D1FF",
+  "#FFE3C8","#DFF5FF","#E8FFD1","#FFD9D9","#E3E3FF"
+];
+
 
 /* ---------- POKEDEX ---------- */
 
@@ -396,6 +415,7 @@ function cerrarScanner() {
     irA("menu");
   }
 }
+
 
 
 
