@@ -10,8 +10,9 @@ body {
 }
 
 .oculto {
-  display: none;
+  display: none !important;
 }
+
 
 h1, h2 {
   color: #333;
@@ -139,5 +140,6 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
