@@ -131,7 +131,7 @@ button {
 }
 
 #menu button {
-  width: 80%;         /* hace que se vean grandes */
+  width: 100%;         /* hace que se vean grandes */
   max-width: 320px;   /* evita que se vuelvan gigantes */
 }
 
@@ -139,4 +139,5 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
