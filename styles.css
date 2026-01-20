@@ -30,7 +30,7 @@ input {
 button {
   margin: 8px;
   padding: 40px 44px;
-  font-size: 4px;
+  font-size: 40px;
   cursor: pointer;
 }
 
@@ -89,6 +89,7 @@ button {
   box-sizing: border-box;
   color: black;                  /* color de texto */
   font-family: 'Arial', sans-serif;
+  font-size: 40px;
 }
 
 #presentacion::before {
@@ -145,6 +146,7 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
 
