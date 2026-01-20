@@ -22,8 +22,8 @@ h1, h2 {
 
 input {
   display: block;
-  margin: 40px auto;
-  padding: 38px;
+  margin: 10px auto;
+  padding: 8px;
   width: 250px;
 }
 
@@ -49,8 +49,8 @@ button {
 
 .pokemon {
   background: white;
-  padding: 40px;
-  border-radius: 38px;
+  padding: 10px;
+  border-radius: 8px;
   border: 2px solid #ccc;
 }
 
@@ -58,6 +58,7 @@ button {
   font-size: 40px;
   color: black;
 }
+
 
 .desbloqueado {
   font-size: 40px;
@@ -146,6 +147,7 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
 
