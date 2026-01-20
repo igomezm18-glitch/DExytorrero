@@ -416,6 +416,28 @@ function cerrarScanner() {
   }
 }
 
+function abrirLocalizaciones() {
+  const lista = JSON.parse(localStorage.getItem("pokemons"));
+  const contenedor = document.getElementById("listaPistas");
+  contenedor.innerHTML = "";
+
+  lista.forEach((p, i) => {
+    const div = document.createElement("div");
+    div.className = "pista";
+    div.style.backgroundColor = coloresPistas[i];
+
+    if (p.desbloqueado) {
+      div.classList.add("desbloqueada");
+    }
+
+    div.innerHTML = pistasLocalizacion[i];
+    contenedor.appendChild(div);
+  });
+
+  irA("localizaciones");
+}
+
+
 
 
 
