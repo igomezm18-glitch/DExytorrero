@@ -122,7 +122,21 @@ button {
   font-weight: bold;
 }
 
+/* ---- NUEVO ESTILO PARA EL MENÚ PRINCIPAL ---- */
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;          /* espacio entre botones */
+}
+
+#menu button {
+  width: 80%;         /* hace que se vean grandes */
+  max-width: 320px;   /* evita que se vuelvan gigantes */
+}
+
 .pista.desbloqueada {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
