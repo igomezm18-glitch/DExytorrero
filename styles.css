@@ -193,6 +193,11 @@ button {
   height: 260px;
 }
 
+.contenedor-marco.rectangular .pokemon-ampliado {
+  width: 300px;
+}
+
+
 
 
 
