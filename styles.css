@@ -187,6 +187,12 @@ button {
   pointer-events: none;
 }
 
+/* Marco rectangular para Pokémon apaisados */
+.contenedor-marco.rectangular {
+  width: 360px;
+  height: 260px;
+}
+
 
 
 
