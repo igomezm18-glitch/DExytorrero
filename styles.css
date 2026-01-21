@@ -175,17 +175,22 @@ button {
 
 .pokemon-enmarcado {
   display: inline-block;
-  padding: 40px; /* grosor del marco */
+  padding: 50px; /* grosor del marco */
   background-image: url("img/marco.png");
-  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
+
 .imagen-detalle {
+  width: 260px;        /* O el tamaño que quieras */
+  height: auto;
   display: block;
-  background: white;   /* mantiene el fondo blanco */
-  padding: 10px;       /* aire entre imagen y marco */
+  background: white;
 }
+
+
 
 
 
