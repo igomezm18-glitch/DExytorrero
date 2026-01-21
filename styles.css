@@ -173,6 +173,20 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.pokemon-enmarcado {
+  display: inline-block;
+  padding: 40px; /* grosor del marco */
+  background-image: url("img/marco.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.imagen-detalle {
+  display: block;
+  background: white;   /* mantiene el fondo blanco */
+  padding: 10px;       /* aire entre imagen y marco */
+}
+
 
 
 
