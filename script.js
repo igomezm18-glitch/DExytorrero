@@ -333,14 +333,17 @@ if (sol.length === 1 && sol[0] === "NS") {
   }
 }
 
-  if (sol.length === 1) {
-    if (Number(respuesta1.value) === sol[0]) {
-      desbloquearPokemon(ecuacionActual.id);
-      alert("✅ ¡Correcto!");
-      irA("menu");
-      return;
-    }
+ if (sol.length === 1) {
+  const r = leerNumero(respuesta1.value);
+
+  // tolerancia para decimales
+  if (Math.abs(r - sol[0]) < 1e-6) {
+    desbloquearPokemon(ecuacionActual.id);
+    alert("✅ ¡Correcto!");
+    irA("menu");
+    return;
   }
+}
 
   if (sol.length === 2) {
     const r1 = leerNumero(respuesta1.value);
@@ -436,6 +439,7 @@ function abrirLocalizaciones() {
 
   irA("localizaciones");
 }
+
 
 
 
