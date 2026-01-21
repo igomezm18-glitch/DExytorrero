@@ -41,11 +41,13 @@ button {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
-  max-width: 600px;
-  margin: 20px auto;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 900px;   /* más ancho para que se vea grande */
+  margin: 20px auto;  /* centrado */
+  justify-items: center;
 }
+
 
 .pokemon {
   background: white;
@@ -147,6 +149,7 @@ button {
   text-decoration: line-through;
   opacity: 0.6;
 }
+
 
 
 
