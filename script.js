@@ -221,6 +221,12 @@ function verPokemon(id) {
     imagen.src = datos.silueta;
     info.textContent = "Esta anomalía aún no ha sido registrada.";
   }
+const contenedor = document.querySelector(".contenedor-marco");
+contenedor.classList.remove("rectangular");
+
+if (id === 1) {
+  contenedor.classList.add("rectangular");
+}
 
   irA("detallePokemon");
 }
@@ -439,6 +445,7 @@ function abrirLocalizaciones() {
 
   irA("localizaciones");
 }
+
 
 
 
