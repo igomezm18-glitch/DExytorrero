@@ -178,14 +178,9 @@ button {
 
 /* Marco */
 .marco-superpuesto {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
+  display: none !important;
 }
+
 
 /* Marco rectangular para Pokémon apaisados */
 .contenedor-marco.rectangular {
@@ -196,6 +191,7 @@ button {
 .contenedor-marco.rectangular .pokemon-ampliado {
   width: 300px;
 }
+
 
 
 
