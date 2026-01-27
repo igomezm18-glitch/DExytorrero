@@ -138,14 +138,14 @@ const datosPokemon = [
 ];
 
 const pistasLocalizacion = [
-  "1. Los números duermen. Aquí, el silencio es el protagonista",
+  "1. Los números duermen. Aquí el silencio es el protagonista",
   "2. Territorio prohibido para los jugadores. Aquí nacen los exámenes de tinta y café",
   "3. Aquí, Euclides entrenaba sus trapecios",
   "4. Las medidas y las proporciones son fundamentales para una buena receta",
-  "5. ",
-  "6. ",
+  "5. Si quieres hacer experimentos, ponte la bata",
+  "6. Desarrollan su Formación Profesional en el cuidado de pacientes",
   "7. No es aula ni despacho, pero todos pasan por aquí. Si dices ''gracias'', el camino se abre para ti",
-  "8. ",
+  "8. Face à l'amour que je te porte, la propriété d'Archimède des chiffres naturels ne s'applique pas",
   "9. Momentos difíciles y grandes incógnitas. Aquí entrenan los veteranos",
   "10. Si quieres capturar a la última criatura, busca al creador de la DExy y dile ''¡Acepto el reto!''"
 ];
