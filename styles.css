@@ -150,7 +150,6 @@ button {
   opacity: 0.6;
 }
 
-
 .imagen-detalle {
   width: 260px;        /* O el tamaño que quieras */
   height: auto;
@@ -158,19 +157,49 @@ button {
   background: white;
 }
 
+.contenedor-marco {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 30px auto;
+}
 
-
-/* POKÉMON: DELANTE */
+/* Pokémon */
 .pokemon-ampliado {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* centra horizontal y vertical */
-  width: 260px;  /* ajusta según tu marco */
+  width: 240px;      /* MÁS GRANDE que antes */
   height: auto;
-  z-index: 2;
-  background: transparent;
+  transform: translate(-50%, -50%);
+  background: white;
+  z-index: 1;
 }
+
+/* Marco */
+.marco-superpuesto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Marco rectangular para Pokémon apaisados */
+.contenedor-marco.rectangular {
+  width: 360px;
+  height: 260px;
+}
+
+.contenedor-marco.rectangular .pokemon-ampliado {
+  width: 300px;
+}
+
+
+
+
 
 
 
