@@ -202,25 +202,6 @@ function abrirPokedex() {
   irA("pokedex");
 }
 
-    const datos = datosPokemon.find(d => d.id === p.id);
-
-    const imagen = p.desbloqueado
-      ? datos.imagen
-      : datos.silueta;
-
-    const nombre = p.desbloqueado ? datos.nombre : "????";
-
-    div.innerHTML = `
-      <img src="${imagen}" alt="${nombre}">
-      <p>${nombre}</p>
-    `;
-
-    listaPokemon.appendChild(div);
-  });
-
-  irA("pokedex");
-}
-
 
 
 function verPokemon(id) {
@@ -465,6 +446,7 @@ function abrirLocalizaciones() {
 
   irA("localizaciones");
 }
+
 
 
 
