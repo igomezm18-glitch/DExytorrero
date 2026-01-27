@@ -150,6 +150,13 @@ button {
   opacity: 0.6;
 }
 
+.contenedor-marco {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 30px auto;
+}
+
 .imagen-detalle {
   width: 260px;        /* O el tamaño que quieras */
   height: auto;
@@ -157,12 +164,7 @@ button {
   background: white;
 }
 
-.contenedor-marco {
-  position: relative;
-  width: 320px;
-  height: 320px;
-  margin: 30px auto;
-}
+
 
 /* Pokémon */
 .pokemon-ampliado {
@@ -196,6 +198,7 @@ button {
 .contenedor-marco.rectangular .pokemon-ampliado {
   width: 300px;
 }
+
 
 
 
