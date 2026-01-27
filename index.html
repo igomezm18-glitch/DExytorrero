@@ -4,16 +4,14 @@
   <meta charset="UTF-8">
   <title>DExy</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#e3350d">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-  <script src="https://unpkg.com/html5-qrcode"></script>
-</head>
 
+</script>
 <script src="https://unpkg.com/html5-qrcode"></script>
 
 
@@ -117,6 +115,11 @@ Hoy, el instituto es un campo de batalla. ¡Qué las matemáticas os acompañen!
 <section id="detallePokemon" class="pantalla oculto">
   <h2 id="detalleNombre"></h2>
 
+  <div class="contenedor-marco">
+    <img id="detalleImagen" class="pokemon-ampliado">
+    <img src="img/marco.png" class="marco-superpuesto">
+  </div>
+
   <p id="detalleInfo"></p>
 
   <button onclick="irA('pokedex')">⬅ Volver</button>
@@ -136,6 +139,10 @@ Hoy, el instituto es un campo de batalla. ¡Qué las matemáticas os acompañen!
 <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
 
 
 
