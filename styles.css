@@ -163,9 +163,9 @@ button {
   width: 320px;
   height: 320px;
   margin: 30px auto;
+  overflow: hidden;  /* corta las partes que sobresalgan */
 }
 
-/* MARCO: DETRÁS */
 .marco-superpuesto {
   position: absolute;
   inset: 0;
@@ -173,19 +173,22 @@ button {
   height: 100%;
   z-index: 1;
   pointer-events: none;
+  object-fit: cover; /* fuerza a que el marco ocupe todo el contenedor */
 }
+
 
 /* POKÉMON: DELANTE */
 .pokemon-ampliado {
   position: absolute;
+  top: 50%;
   left: 50%;
-  bottom: -20px;      /* hace que "salga" del marco */
-  transform: translateX(-50%);
-  width: 260px;
+  transform: translate(-50%, -50%); /* centra horizontal y vertical */
+  width: 260px;  /* ajusta según tu marco */
   height: auto;
   z-index: 2;
   background: transparent;
 }
+
 
 
 
@@ -198,6 +201,7 @@ button {
 .contenedor-marco.rectangular .pokemon-ampliado {
   width: 300px;
 }
+
 
 
 
