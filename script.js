@@ -235,7 +235,7 @@ if (id === 1) {
 /* ---------- ZONA SECRETA ---------- */
 
 function comprobarCodigo() {
-  const codigoCorrecto = 4321;
+  const codigoCorrecto = 196;
 
   if (codigoInput.value == codigoCorrecto) {
     irA("pregunta");
@@ -445,6 +445,7 @@ function abrirLocalizaciones() {
 
   irA("localizaciones");
 }
+
 
 
 
