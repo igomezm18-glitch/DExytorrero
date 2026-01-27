@@ -180,15 +180,27 @@ function abrirPokedex() {
   lista.forEach(p => {
     const div = document.createElement("div");
     div.className = "pokemon";
-    div.dataset.id = p.id;
+    div.onclick = () => verPokemon(p.id);
 
-    div.onclick = () => {
-      document.querySelectorAll(".pokemon").forEach(el =>
-        el.classList.remove("seleccionado")
-      );
-      div.classList.add("seleccionado");
-      verPokemon(p.id);
-    };
+    const datos = datosPokemon.find(d => d.id === p.id);
+
+    const imagen = p.desbloqueado
+      ? `img/poke${p.id}.png`
+      : `img/poke${p.id}_silueta.png`;
+
+    // 👉 AQUÍ ESTÁ EL CAMBIO CLAVE
+    const nombre = p.desbloqueado ? datos.nombre : "????";
+
+    div.innerHTML = `
+      <img src="${imagen}" alt="${nombre}">
+      <p>${nombre}</p>
+    `;
+
+    listaPokemon.appendChild(div);
+  });
+
+  irA("pokedex");
+}
 
     const datos = datosPokemon.find(d => d.id === p.id);
 
@@ -453,6 +465,7 @@ function abrirLocalizaciones() {
 
   irA("localizaciones");
 }
+
 
 
 
